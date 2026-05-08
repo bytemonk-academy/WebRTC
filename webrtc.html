@@ -610,12 +610,10 @@
         audio: false
       });
     }
-
     // iPhone Safari commonly does not support tab/screen capture from web pages.
     if (isIOSSafari()) {
       throw new Error('This Safari on iPhone does not support web screen sharing. Use desktop Chrome/Edge/Safari as Sender.');
     }
-
     throw new Error('Screen sharing is not supported in this browser. Try latest Chrome, Edge, or Safari on desktop.');
   }
 
